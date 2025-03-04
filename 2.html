@@ -8,11 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medios Con Valor</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f2f2f2; text-align: center; }
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?nature,forest') no-repeat center center/cover;
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .menu { max-width: 400px; margin: 20px auto; text-align: left; }
         .menu-item { background: #00dd2a; color: white; padding: 15px; border-radius: 5px; margin: 5px 0; cursor: pointer; }
         .submenu { display: none; padding-left: 15px; }
         .submenu a { display: block; padding: 10px; background: #009eff; color: white; text-decoration: none; margin: 5px 0; border-radius: 3px; }
+        footer {
+            background-color: rgba(83, 91, 111, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
     <script>
         function toggleSubmenu(id) {
@@ -51,7 +71,7 @@
         </div>
     </div>
     <footer>
-        <p>MEDIOS CON VALOR by Eduardo Vázquez</p>
+        <p>MEDIOS CON VALOR <a href="https://levm.site">by Eduardo Vázquez</a></p>
     </footer>
 </body>
 </html>
